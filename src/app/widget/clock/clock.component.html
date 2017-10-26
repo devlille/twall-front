@@ -1,2 +1,4 @@
 {{ now | date:'HH' }}
 <strong>{{ now | date:'mm' }}</strong>
+<span *ngIf="ticTac">.</span>
+<span *ngIf="!ticTac">&nbsp;</span>
