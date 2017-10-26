@@ -1,0 +1,13 @@
+mat-grid-tile {
+    border: 1px solid #9E9E9E;
+}
+
+mat-grid-tile:first-child,
+mat-grid-tile:nth-child(5),
+mat-grid-tile + mat-grid-tile {
+    border-left: 0;
+}
+
+mat-grid-tile:nth-child(4) {
+    border-right: 0;
+}

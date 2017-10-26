@@ -15,7 +15,12 @@ export class TweetsGridListComponent implements OnInit {
   constructor(private tweetsService: TweetsService) { }
 
   ngOnInit() {
-    // TODO
+    this.tweetsService
+      .getTweets()
+      .subscribe(
+        tweets => this.tweets = tweets,
+        err => console.log('ERR')
+      );
   }
 
 }
