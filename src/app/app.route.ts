@@ -4,7 +4,12 @@ import { TweetsGridListComponent } from './page/tweets/tweets-grid-list/tweets-g
 
 export const AppRoutes: Routes = [
     {
-        path: '',
+        path: 'tweets',
         component: TweetsGridListComponent
+    },
+    {
+        path: '',
+        redirectTo: '/tweets',
+        pathMatch: 'full'
     }
 ];
