@@ -1,0 +1,32 @@
+.tweets-card {
+    background-color: rgba(255,255,255,0.87);
+    margin: 8px;
+}
+
+.tweets-card .content {
+    font-size: 18px;
+}
+
+.tweets-card .footer {
+    display: flex;
+}
+
+.tweets-card .footer div {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.tweets-card .footer .favorite {
+    color: #F44336;
+}
+
+.tweets-card .footer .retweet {
+    color: #4CAF50;
+}
+
+.tweets-card .footer .reply {
+    color: #9E9E9E;
+}

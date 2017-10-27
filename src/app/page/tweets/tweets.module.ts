@@ -1,15 +1,16 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { MatGridListModule } from '@angular/material';
+import { MatCardModule, MatSnackBarModule } from '@angular/material';
 
-import { TweetsGridListComponent } from './tweets-grid-list/tweets-grid-list.component';
-import { TweetsTileComponent } from './tweets-tile/tweets-tile.component';
+import { TweetsListComponent } from './tweets-list/tweets-list.component';
+import { TweetsCardComponent } from './tweets-card/tweets-card.component';
 
 @NgModule({
   imports: [
     CommonModule,
-    MatGridListModule,
+    MatCardModule,
+    MatSnackBarModule
   ],
-  declarations: [TweetsGridListComponent, TweetsTileComponent]
+  declarations: [TweetsListComponent, TweetsCardComponent]
 })
 export class TweetsModule { }

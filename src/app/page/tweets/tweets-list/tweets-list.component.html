@@ -1,0 +1,5 @@
+<div class="tweets-list">
+    <div class="column" *ngFor="let col of tweets">
+        <app-tweets-card *ngFor="let tweet of col" [tweet]="tweet"></app-tweets-card>
+    </div>
+</div>

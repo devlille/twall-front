@@ -1,16 +1,16 @@
-:host {
+@keyframes animated-red-dot {
+    50% { border-radius: 50%; }
+    100% { border-radius: 2px; }
+}
+
+.live {
     padding: 0 14px;
     display: flex;
     flex-direction: row;
     align-items: center;
 }
 
-@keyframes animated-red-dot {
-    50% { border-radius: 50%; }
-    100% { border-radius: 2px; }
-}
-
-.red-dot {
+.live .red-dot {
     width: 15px;
     height: 15px;
     background-color: #F44336;

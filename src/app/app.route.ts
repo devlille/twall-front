@@ -1,11 +1,11 @@
 import { Routes } from '@angular/router';
 
-import { TweetsGridListComponent } from './page/tweets/tweets-grid-list/tweets-grid-list.component';
+import { TweetsListComponent } from './page/tweets/tweets-list/tweets-list.component';
 
 export const AppRoutes: Routes = [
     {
         path: 'tweets',
-        component: TweetsGridListComponent
+        component: TweetsListComponent
     },
     {
         path: '',

@@ -1,0 +1,8 @@
+.tweets-list {
+    display: flex;
+    flex-direction: row;
+}
+
+.tweets-list .column {
+    flex: 1;
+}

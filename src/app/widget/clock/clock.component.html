@@ -1,5 +1,7 @@
-{{ now | date:'HH' }}
-<strong>{{ now | date:'mm' }}</strong>
-<span *ngIf="ticTac; then dotBlock; else spaceBlock"></span>
-<ng-template #dotBlock>.</ng-template>
-<ng-template #spaceBlock>&nbsp;</ng-template>
+<div class="clock">
+    {{ now | date:'HH' }}
+    <strong>{{ now | date:'mm' }}</strong>
+    <span *ngIf="ticTac; then dotBlock; else spaceBlock"></span>
+    <ng-template #dotBlock>.</ng-template>
+    <ng-template #spaceBlock>&nbsp;</ng-template>
+</div>
