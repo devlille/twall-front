@@ -16,9 +16,9 @@
       <i class="material-icons">favorite</i>
       {{ tweet.favoriteCount | number }}
     </div>
-    <div class="reply">
-      <i class="material-icons">reply</i>
-      {{ tweet.replyCount | number }}
+    <div class="time">
+      <i class="material-icons">access_time</i>
+      {{ tweet.createdAt | time }}
     </div>
   </div>
 </mat-card>

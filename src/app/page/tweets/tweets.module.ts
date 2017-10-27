@@ -1,3 +1,4 @@
+import { SharedModule } from './../../shared/shared.module';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { MatCardModule, MatSnackBarModule } from '@angular/material';
@@ -9,7 +10,8 @@ import { TweetsCardComponent } from './tweets-card/tweets-card.component';
   imports: [
     CommonModule,
     MatCardModule,
-    MatSnackBarModule
+    MatSnackBarModule,
+    SharedModule
   ],
   declarations: [TweetsListComponent, TweetsCardComponent]
 })
