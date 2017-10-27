@@ -14,16 +14,18 @@ export class ClockComponent implements OnInit, OnDestroy {
   constructor() { }
 
   ngOnInit(): void {
-    this.now = new Date();
-
-    this._timer = setInterval(() => {
-      this.now = new Date();
-      this.ticTac = !this.ticTac;
-    }, 1000);
+    this._getNow();
   }
 
   ngOnDestroy(): void {
-    clearInterval(this._timer);
+    clearTimeout(this._timer);
+  }
+
+  private _getNow(): void {
+    this.now = new Date();
+    this.ticTac = !this.ticTac;
+
+    this._timer = setTimeout(() => this._getNow(), 1000);
   }
 
 }
