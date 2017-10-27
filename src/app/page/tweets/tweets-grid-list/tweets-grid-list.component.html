@@ -1,5 +1,23 @@
-<mat-grid-list cols="4">
+<mat-grid-list cols="4" rowHeight="4:3">
   <mat-grid-tile *ngFor="let tweet of tweets">
     <app-tweets-tile [tweet]="tweet"></app-tweets-tile>
   </mat-grid-tile>
+  <mat-grid-tile *ngFor="let tweet of tweets">
+      <app-tweets-tile [tweet]="tweet"></app-tweets-tile>
+    </mat-grid-tile>
+    <mat-grid-tile *ngFor="let tweet of tweets">
+        <app-tweets-tile [tweet]="tweet"></app-tweets-tile>
+      </mat-grid-tile>
+      <mat-grid-tile *ngFor="let tweet of tweets">
+          <app-tweets-tile [tweet]="tweet"></app-tweets-tile>
+        </mat-grid-tile>
+        <mat-grid-tile *ngFor="let tweet of tweets">
+            <app-tweets-tile [tweet]="tweet"></app-tweets-tile>
+          </mat-grid-tile>
+          <mat-grid-tile *ngFor="let tweet of tweets">
+              <app-tweets-tile [tweet]="tweet"></app-tweets-tile>
+            </mat-grid-tile>
+            <mat-grid-tile *ngFor="let tweet of tweets">
+                <app-tweets-tile [tweet]="tweet"></app-tweets-tile>
+              </mat-grid-tile>
 </mat-grid-list>
