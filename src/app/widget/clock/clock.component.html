@@ -1,4 +1,5 @@
 {{ now | date:'HH' }}
 <strong>{{ now | date:'mm' }}</strong>
-<span *ngIf="ticTac">.</span>
-<span *ngIf="!ticTac">&nbsp;</span>
+<span *ngIf="ticTac; then dotBlock; else spaceBlock"></span>
+<ng-template #dotBlock>.</ng-template>
+<ng-template #spaceBlock>&nbsp;</ng-template>
