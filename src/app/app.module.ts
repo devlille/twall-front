@@ -17,11 +17,9 @@ import { AppComponent } from './app.component';
     BrowserModule,
     BrowserAnimationsModule,
     RouterModule.forRoot(AppRoutes),
-    SharedModule,
     LayoutModule,
     PageModule
   ],
-  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
