@@ -5,4 +5,5 @@
 
 .tweets-list .column {
     flex: 1;
+    padding: 5px;
 }
