@@ -1,6 +1,7 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
 import { ActivatedRoute, ParamMap } from '@angular/router';
 import { MatSnackBar } from '@angular/material';
+import { trigger, transition, style, animate } from '@angular/animations';
 
 import 'rxjs/add/operator/switchMap';
 import { Observable } from 'rxjs/Observable';
@@ -15,7 +16,7 @@ import { TweetsService } from './../../../shared/service/tweets.service';
 })
 export class TweetsListComponent implements OnInit, OnDestroy {
 
-  public tweets: Array<Array<Tweet>>;
+  public tweets: Array<Tweet>;
   private _timer: NodeJS.Timer;
   private _refreshFrequency: number;
 
@@ -42,14 +43,7 @@ export class TweetsListComponent implements OnInit, OnDestroy {
     this.tweetsService
       .getTweets()
       .subscribe(
-        tweets => {
-          this.tweets = [];
-          this.tweets.push([], [], [], [], []);
-
-          for (let idx = 0; idx < tweets.length; idx++) {
-              this.tweets[idx % 5].push(tweets[idx]);
-          }
-        },
+        tweets => this.tweets = tweets,
         err => this._handleErr()
       );
 

@@ -1,5 +1,5 @@
 <div class="tweets-list">
-    <div class="column" *ngFor="let col of tweets">
-        <app-tweets-card *ngFor="let tweet of col" [tweet]="tweet"></app-tweets-card>
+    <div class="cell" *ngFor="let tweet of tweets;trackBy:tweet?.id">
+        <app-tweets-card [tweet]="tweet"></app-tweets-card>
     </div>
 </div>

@@ -1,9 +1,8 @@
 .tweets-list {
-    display: flex;
-    flex-direction: row;
+    padding: 8px;
+    column-count: 5;
 }
 
-.tweets-list .column {
-    flex: 1;
-    padding: 5px;
+.tweets-list .cell {
+    display: inline-block;
 }
