@@ -7,8 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LiveComponent implements OnInit {
 
+  private isOnline: boolean;
+
   constructor() { }
 
-  ngOnInit(): void { }
+  ngOnInit(): void {
+    this.isOnline = window.navigator.onLine;
+
+    window.ononline = (evt: Event): void => { this.isOnline = true; };
+    window.onoffline = (evt: Event): void => { this.isOnline = false; };
+  }
 
 }

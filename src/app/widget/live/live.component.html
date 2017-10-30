@@ -1,4 +1,6 @@
 <div class="live">
-    <div class="red-dot"></div>
-    <div>Direct</div>
+    <div class="red-dot" [ngClass]="{'active': isOnline}"></div>
+    <div *ngIf="isOnline; then onlineBlock; else offlineBlock;"></div>
+    <ng-template #onlineBlock>Direct</ng-template>
+    <ng-template #offlineBlock>Hors Ligne</ng-template>
 </div>
