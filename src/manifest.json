@@ -3,8 +3,35 @@
     "short_name": "Twall",
     "theme_color": "#ffffff",
     "background_color": "#ffffff",
-    "display": "browser",
+    "display": "standalone",
     "orientation": "landscape",
     "scope": "/",
-    "start_url": "/"
+    "start_url": "/tweets",
+    "icons": [
+        {
+            "src": "assets/img/manifest/icon-128x128.png",
+            "type": "image/png",
+            "sizes": "128x128"
+        },
+        {
+            "src": "assets/img/manifest/icon-144x144.png",
+            "type": "image/png",
+            "sizes": "144x144"
+        },
+        {
+            "src": "assets/img/manifest/icon-152x152.png",
+            "type": "image/png",
+            "sizes": "152x152"
+        },
+        {
+            "src": "assets/img/manifest/icon-192x192.png",
+            "type": "image/png",
+            "sizes": "192x192"
+        },
+        {
+            "src": "assets/img/manifest/icon-512x512.png",
+            "type": "image/png",
+            "sizes": "512x512"
+        }
+    ]
 }
