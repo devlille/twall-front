@@ -1,7 +1,4 @@
 body {
     margin: 0;
     overflow: hidden;
-    background: url('/assets/img/background.png') top left no-repeat;
-    background-size: cover;
-    min-height: 100%;
 }
