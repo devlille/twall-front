@@ -1,5 +1,9 @@
 <mat-toolbar class="header">
-  <img class="logo" src="assets/img/logo.svg" alt="#DevfestLille" />
+  #DevfestLille&nbsp;<strong>2018</strong>
+  &nbsp;-&nbsp;
+  <span *ngIf="isChti; then chti; else other"></span>
+  <ng-template #chti>Binv'nue</ng-template>
+  <ng-template #other>Bienvenue</ng-template>
   <span class="space"></span>
   <app-live></app-live>
   <app-clock></app-clock>

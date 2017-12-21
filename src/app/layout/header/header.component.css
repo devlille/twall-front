@@ -2,11 +2,6 @@
     border-bottom: 1px solid #EEEEEE;
 }
 
-.header img.logo {
-    height: 45px;
-    max-width: 100%;
-}
-
 .header span.space {
     flex: 1;
 }
