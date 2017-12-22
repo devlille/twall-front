@@ -2,6 +2,18 @@
     border-bottom: 1px solid #EEEEEE;
 }
 
+.header .first {
+    color: #0e6993;
+}
+
+.header .second {
+    color: #c52127;
+}
+
+.header .third {
+    color: #f7981d;
+}
+
 .header span.space {
     flex: 1;
 }

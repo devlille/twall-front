@@ -1,9 +1,13 @@
 <mat-toolbar class="header">
-  #DevfestLille&nbsp;<strong>2018</strong>
+  #
+  <span class="first">Dev</span>
+  <span class="second">fest</span>
+  <span class="third">Lille</span>
+  &nbsp;
+  <strong>2018</strong>
   &nbsp;-&nbsp;
-  <span *ngIf="isChti; then chti; else other"></span>
-  <ng-template #chti>Binv'nue</ng-template>
-  <ng-template #other>Bienvenue</ng-template>
+  <span *ngIf="isChti" @easeIn>Binv'nue biloute !!</span>
+  <span *ngIf="!isChti" @easeIn>Bienvenue</span>
   <span class="space"></span>
   <app-live></app-live>
   <app-clock></app-clock>
