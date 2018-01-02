@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { TweetsGridListComponent } from './tweets-grid-list.component';
+import { TweetsListComponent } from './tweets-list.component';
 
-describe('TweetsGridListComponent', () => {
-  let component: TweetsGridListComponent;
-  let fixture: ComponentFixture<TweetsGridListComponent>;
+describe('TweetsListComponent', () => {
+  let component: TweetsListComponent;
+  let fixture: ComponentFixture<TweetsListComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ TweetsGridListComponent ]
+      declarations: [ TweetsListComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(TweetsGridListComponent);
+    fixture = TestBed.createComponent(TweetsListComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
