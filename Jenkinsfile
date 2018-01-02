@@ -9,7 +9,8 @@ pipeline {
         stage('Test') {
             steps {
                 sh 'npm run lint'
-                sh 'npm run test && npm run e2e'
+                sh 'npm run test'
+                sh 'npm run start && npm run e2e'
             }
         }
         stage('Build') {
