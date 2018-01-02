@@ -1,4 +1,4 @@
-# Front / Twall - Devfest // GDG Lille ([@GDGLille](https://twitter.com/GDGLille)) 
+# Front / Twall - [Devfest](https://devfest.gdglille.org/) // GDG Lille ([@GDGLille](https://twitter.com/GDGLille)) 
 
 ## Made with ...
 * [NPM](https://www.npmjs.com/) 
