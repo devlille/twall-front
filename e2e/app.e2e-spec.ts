@@ -1,10 +1,10 @@
-import { TwallFrontPage } from './app.po';
+import { AppPage } from './app.po';
 
-describe('twall-front App', () => {
-  let page: TwallFrontPage;
+describe('twall-front-upgrade App', () => {
+  let page: AppPage;
 
   beforeEach(() => {
-    page = new TwallFrontPage();
+    page = new AppPage();
   });
 
   it('should display welcome message', () => {
