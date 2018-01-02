@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LiveComponent implements OnInit {
 
-  private isOnline: boolean;
+  public isOnline: boolean;
 
   constructor() { }
 
