@@ -3,7 +3,6 @@ import { ActivatedRoute, ParamMap } from '@angular/router';
 import { MatSnackBar } from '@angular/material';
 import { trigger, transition, style, animate } from '@angular/animations';
 
-import 'rxjs/add/operator/switchMap';
 import { Observable } from 'rxjs/Observable';
 
 import { Tweet } from './../../../shared/model/tweet';
@@ -12,7 +11,17 @@ import { TweetsService } from './../../../shared/service/tweets.service';
 @Component({
   selector: 'app-tweets-list',
   templateUrl: './tweets-list.component.html',
-  styleUrls: ['./tweets-list.component.css']
+  styleUrls: ['./tweets-list.component.css'],
+  animations: [
+    trigger('easeIn', [
+      transition(
+        ':enter',
+        [
+          style({opacity: 0}),
+          animate('500ms ease-in', style({opacity: 1}))
+        ])
+    ])
+  ]
 })
 export class TweetsListComponent implements OnInit, OnDestroy {
 
@@ -26,11 +35,10 @@ export class TweetsListComponent implements OnInit, OnDestroy {
     private snackBar: MatSnackBar) { }
 
   ngOnInit(): void {
-    this.route
-      .paramMap
+    this.route.paramMap
       .subscribe((params: ParamMap) => {
         const param = +params.get('refresh');
-        this._refreshFrequency = param && param > 5000 ? +params.get('refresh') : 5000;
+        this._refreshFrequency = param && param > 5000 ? param : 5000;
         this._getTweets();
       });
   }
@@ -54,9 +62,7 @@ export class TweetsListComponent implements OnInit, OnDestroy {
     this.snackBar.open(
       'Erreur lors de la récupération des tweets !!',
       null,
-      {
-        duration: 3000
-      });
+      { duration: 3000 });
   }
 
 }

@@ -8,7 +8,6 @@ import { Component, OnInit, OnDestroy } from '@angular/core';
 export class ClockComponent implements OnInit, OnDestroy {
 
   public now: Date;
-  public ticTac: boolean;
   private _timer: NodeJS.Timer;
 
   constructor() { }
@@ -23,7 +22,6 @@ export class ClockComponent implements OnInit, OnDestroy {
 
   private _getNow(): void {
     this.now = new Date();
-    this.ticTac = !this.ticTac;
 
     this._timer = setTimeout(() => this._getNow(), 1000);
   }
