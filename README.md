@@ -1,5 +1,7 @@
 # Front / Twall - [Devfest](https://devfest.gdglille.org/) // GDG Lille ([@GDGLille](https://twitter.com/GDGLille)) 
 
+[![Build Status](http://jenkins.bodul.fr/buildStatus/icon?job=GDG-Lille/twall-front/master)](http://jenkins.bodul.fr/job/GDG-Lille/job/twall-front/job/master/)
+
 ## Made with ...
 * [NPM](https://www.npmjs.com/) 
 * [Angular](https://angular.io/) with [Angular CLI](https://cli.angular.io/)
