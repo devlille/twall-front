@@ -1,9 +1,9 @@
 .tweets-list {
-    padding: 8px;
-    column-count: 4;
-    background-color: whitesmoke;
+  padding: 8px;
+  column-count: 4;
+  background-color: whitesmoke;
 }
 
 .tweets-list .cell {
-    display: inline-block;
+  display: inline-block;
 }

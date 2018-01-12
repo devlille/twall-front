@@ -1,5 +1,5 @@
-import { Component, OnInit, OnDestroy } from '@angular/core';
-import { trigger, transition, animate, style } from '@angular/animations';
+import {animate, style, transition, trigger} from '@angular/animations';
+import {Component, OnDestroy, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-header',
@@ -21,7 +21,8 @@ export class HeaderComponent implements OnInit, OnDestroy {
   public isChti: Boolean;
   private _timer: NodeJS.Timer;
 
-  constructor() { }
+  constructor() {
+  }
 
   ngOnInit(): void {
     this.toggleLang();

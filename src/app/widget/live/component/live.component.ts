@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-live',
@@ -9,13 +9,18 @@ export class LiveComponent implements OnInit {
 
   public isOnline: boolean;
 
-  constructor() { }
+  constructor() {
+  }
 
   ngOnInit(): void {
     this.isOnline = window.navigator.onLine;
 
-    window.ononline = (evt: Event): void => { this.isOnline = true; };
-    window.onoffline = (evt: Event): void => { this.isOnline = false; };
+    window.ononline = (evt: Event): void => {
+      this.isOnline = true;
+    };
+    window.onoffline = (evt: Event): void => {
+      this.isOnline = false;
+    };
   }
 
 }

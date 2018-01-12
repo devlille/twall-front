@@ -1,12 +1,9 @@
-import { Component, OnInit, OnDestroy } from '@angular/core';
-import { ActivatedRoute, ParamMap } from '@angular/router';
-import { MatSnackBar } from '@angular/material';
-import { trigger, transition, style, animate } from '@angular/animations';
-
-import { Observable } from 'rxjs/Observable';
-
-import { Tweet } from './../../../shared/model/tweet';
-import { TweetsService } from './../../../shared/service/tweets.service';
+import {animate, style, transition, trigger} from '@angular/animations';
+import {Component, OnDestroy, OnInit} from '@angular/core';
+import {MatSnackBar} from '@angular/material';
+import {ActivatedRoute, ParamMap} from '@angular/router';
+import {Tweet} from '../../../shared/twitter/model/tweet';
+import {TwitterService} from '../../../shared/twitter/service/twitter.service';
 
 @Component({
   selector: 'app-tweets-list',
@@ -29,10 +26,10 @@ export class TweetsListComponent implements OnInit, OnDestroy {
   private _timer: NodeJS.Timer;
   private _refreshFrequency: number;
 
-  constructor(
-    private tweetsService: TweetsService,
-    private route: ActivatedRoute,
-    private snackBar: MatSnackBar) { }
+  constructor(private tweetsService: TwitterService,
+              private route: ActivatedRoute,
+              private snackBar: MatSnackBar) {
+  }
 
   ngOnInit(): void {
     this.route.paramMap
@@ -62,7 +59,7 @@ export class TweetsListComponent implements OnInit, OnDestroy {
     this.snackBar.open(
       'Erreur lors de la récupération des tweets !!',
       null,
-      { duration: 3000 });
+      {duration: 3000});
   }
 
 }

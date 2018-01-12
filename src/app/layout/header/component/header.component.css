@@ -1,15 +1,15 @@
 .header .first {
-    color: #0e6993;
+  color: #0e6993;
 }
 
 .header .second {
-    color: #c52127;
+  color: #c52127;
 }
 
 .header .third {
-    color: #f7981d;
+  color: #f7981d;
 }
 
 .header span.space {
-    flex: 1;
+  flex: 1;
 }

@@ -1,15 +1,14 @@
-import { SharedModule } from './shared/shared.module';
-import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { ServiceWorkerModule } from '@angular/service-worker';
-import { RouterModule } from '@angular/router';
-import { LayoutModule } from './layout/layout.module';
-import { PageModule } from './page/page.module';
+import {NgModule} from '@angular/core';
+import {BrowserModule} from '@angular/platform-browser';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import {RouterModule} from '@angular/router';
+import {ServiceWorkerModule} from '@angular/service-worker';
+import {environment} from '../environments/environment';
+import {AppComponent} from './app.component';
 
-import { AppRoutes } from './app.route';
-import { AppComponent } from './app.component';
-import { environment } from '../environments/environment';
+import {AppRoutes} from './app.route';
+import {HeaderModule} from './layout/header/header.module';
+import {TweetsModule} from './page/tweets/tweets.module';
 
 @NgModule({
   declarations: [
@@ -18,11 +17,12 @@ import { environment } from '../environments/environment';
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
-    ServiceWorkerModule.register('/ngsw-worker.js', { enabled : environment.production}),
+    ServiceWorkerModule.register('/ngsw-worker.js', {enabled: environment.production}),
     RouterModule.forRoot(AppRoutes),
-    LayoutModule,
-    PageModule
+    HeaderModule,
+    TweetsModule
   ],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+}

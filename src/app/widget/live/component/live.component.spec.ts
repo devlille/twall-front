@@ -1,6 +1,6 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import {async, ComponentFixture, TestBed} from '@angular/core/testing';
 
-import { LiveComponent } from './live.component';
+import {LiveComponent} from './live.component';
 
 describe('LiveComponent', () => {
   let component: LiveComponent;
@@ -8,9 +8,9 @@ describe('LiveComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ LiveComponent ]
+      declarations: [LiveComponent]
     })
-    .compileComponents();
+      .compileComponents();
   }));
 
   beforeEach(() => {

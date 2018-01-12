@@ -1,0 +1,9 @@
+<div class="live">
+  <div *ngIf="isOnline; then onlineBlock; else offlineBlock;"></div>
+  <ng-template #onlineBlock>
+    <mat-icon>network_wifi</mat-icon>
+  </ng-template>
+  <ng-template #offlineBlock>
+    <mat-icon>signal_wifi_off</mat-icon>
+  </ng-template>
+</div>

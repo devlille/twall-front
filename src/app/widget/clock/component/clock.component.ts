@@ -1,4 +1,4 @@
-import { Component, OnInit, OnDestroy } from '@angular/core';
+import {Component, OnDestroy, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-clock',
@@ -10,7 +10,8 @@ export class ClockComponent implements OnInit, OnDestroy {
   public now: Date;
   private _timer: NodeJS.Timer;
 
-  constructor() { }
+  constructor() {
+  }
 
   ngOnInit(): void {
     this._getNow();
