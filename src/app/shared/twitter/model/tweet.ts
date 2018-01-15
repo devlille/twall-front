@@ -2,12 +2,12 @@ import {User} from './user';
 
 export class Tweet {
 
-  constructor(public id?: Number,
-              public text?: String,
+  constructor(public id?: number,
+              public text?: string,
               public user?: User,
               public createdAt?: Date,
-              public retweetCount?: Number,
-              public favoriteCount?: Number) {
+              public retweetCount?: number,
+              public favoriteCount?: number) {
   }
 
 }

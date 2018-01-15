@@ -18,7 +18,7 @@ import {Component, OnDestroy, OnInit} from '@angular/core';
 })
 export class HeaderComponent implements OnInit, OnDestroy {
 
-  public isChti: Boolean;
+  public isChti: boolean;
   private _timer: NodeJS.Timer;
 
   constructor() {

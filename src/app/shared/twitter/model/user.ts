@@ -1,11 +1,11 @@
 export class User {
 
-  constructor(public name?: String,
-              public screenName?: String,
-              public url?: String,
-              public description?: String,
-              public verified?: Boolean,
-              public profileImage?: String) {
+  constructor(public name?: string,
+              public screenName?: string,
+              public url?: string,
+              public description?: string,
+              public verified?: boolean,
+              public profileImage?: string) {
   }
 
 
